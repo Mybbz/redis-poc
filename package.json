@@ -1,0 +1,22 @@
+{
+  "name": "redis-poc",
+  "version": "1.0.0",
+  "description": "This is a poc of redis + nodejs + socket.io",
+  "main": "broadcast/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "redis-server",
+    "broadcast": "nodemon broadcast/index.js",
+    "listener": "nodemon client/index.js"
+  },
+  "author": "Rui",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "expressjs": "^1.0.1",
+    "redis": "^2.8.0",
+    "redis-server": "^1.1.0",
+    "socket.io": "^2.0.4",
+    "socket.io-client": "^2.0.4"
+  }
+}
